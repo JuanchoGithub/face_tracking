@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download Models</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.20.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api@1.7.12/dist/face-api.js"></script>
+</head>
+<body>
+    <script>
+        (async () => {
+            try {
+                await faceapi.nets.tinyFaceDetector.load('https://raw.githubusercontent.com/vladmandic/face-api/master/model/');
+                await faceapi.nets.faceLandmark68Net.load('https://raw.githubusercontent.com/vladmandic/face-api/master/model/');
+                console.log('Models downloaded successfully');
+            } catch (error) {
+                console.error('Error downloading models:', error);
+            }
+        })();
+    </script>
+</body>
+</html>

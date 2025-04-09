@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Face Filters</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <video id="video" width="720" height="560" autoplay muted></video>
+        <canvas id="canvas" width="720" height="560"></canvas>
+        <div class="filters">
+            <button onclick="setFilter('clown')">Clown Nose</button>
+            <button onclick="setFilter('glasses')">Cool Glasses</button>
+            <button onclick="setFilter('hat')">Party Hat</button>
+        </div>
+    </div>
+    <!-- Load libraries in order -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.20.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api@1.7.12/dist/face-api.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

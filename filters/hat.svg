@@ -1,0 +1,7 @@
+<svg width="120" height="100" xmlns="http://www.w3.org/2000/svg">
+    <path d="M60 10 L10 90 L110 90 Z" fill="#ff69b4"/>
+    <circle cx="60" cy="85" r="8" fill="yellow"/>
+    <path d="M20 70 L100 70" stroke="gold" stroke-width="3" stroke-dasharray="5,5"/>
+    <path d="M30 50 L90 50" stroke="gold" stroke-width="3" stroke-dasharray="5,5"/>
+    <path d="M40 30 L80 30" stroke="gold" stroke-width="3" stroke-dasharray="5,5"/>
+</svg>
